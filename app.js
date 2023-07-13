@@ -13,9 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(ssr);
 app.use("/", indexRoute);
-app.get("/", (req, res) => {
-  res.send("hello");
-});
+
 
 
 app.listen(PORT, () => {
