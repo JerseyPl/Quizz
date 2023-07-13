@@ -1,12 +1,11 @@
 const React = require('react');
-const Layout = require('./Layout');
 
 // const Product = require('./Product');
 
-module.exports = function Theme({themes}) {
+module.exports = function Theme({ theme }) {
   return (
     <div>
-      <h1>{themes}</h1>
+      <h1>{theme.theme}</h1>
     </div>
   );
 };
