@@ -1,9 +1,11 @@
 const router = require('express').Router();
-const Themes = require('../components/Themes');
+const Themes = require('../components/ThemesList');
 const { Theme } = require('../db/models');
 
-router.get('/themes', (req, res) => {
-  res.renderComponent(Themes, { title: 'Themes' });
+router.get('/themes', async (req, res) => {
+  const themes = await Theme.findAll();
+  console.log(themes);
+  res.renderComponent(Themes, { title: 'Themes', themes });
 });
 
 module.exports = router;
