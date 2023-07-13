@@ -5,12 +5,12 @@ const Theme = require('./Theme');
 
 // const Product = require('./Product');
 
-module.exports = function ThemesList({ title, themes }) {
+module.exports = function ThemesList({ title, theme }) {
   return (
     <div>
       <Layout title={title}>
         <Navbar />
-        {themes.map((theme) => (
+        {theme.map((theme) => (
           <Theme theme={theme} key={theme.id} />
         ))}
       </Layout>
