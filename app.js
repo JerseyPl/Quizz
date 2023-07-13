@@ -13,6 +13,7 @@ app.use(express.json());
 
 app.use(ssr);
 
+
 app.get("/", (req, res) => {
   res.send("hello");
 });
