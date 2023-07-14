@@ -13,11 +13,11 @@ module.exports = function Main({title}) {
             src="https://static.tildacdn.com/tild6135-3364-4837-a566-636330346362/quizplease-presentat.png"
             alt="Quiz"
           />
-          <form action="http://localhost:3000/themes" target="_blank">
+          <a href="http://localhost:3000/themes">
             <button id="btn" class="animate__animated animate__flipInY">
               <i> Играем ?</i>
             </button>
-          </form>
+          </a>
         </div>
       </Layout>
     </div>
