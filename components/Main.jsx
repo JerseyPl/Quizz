@@ -10,7 +10,7 @@ module.exports = function Main({title}) {
         <div className="main">
           <img
             className="img"
-            src="https://acc.libfl.ru/wp-content/uploads/2019/08/quiz1-picture-1024x576.png"
+            src="https://static.tildacdn.com/tild6135-3364-4837-a566-636330346362/quizplease-presentat.png"
             alt="Quiz"
           />
           <form action="http://localhost:3000/themes" target="_blank">
