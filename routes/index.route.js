@@ -7,7 +7,7 @@ const gameRouter = require('./game.route');
 const themesRouter = require("./themes.route");
 
 router.use('/', mainRouter);
-router.use('/themes/game', gameRouter);
+// router.use('/', gameRouter);
 router.use("/themes", themesRouter);
 
 module.exports = router;

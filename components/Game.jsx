@@ -2,12 +2,16 @@ const React = require("react");
 const Layout = require("./Layout");
 const Navbar = require("./Navbar");
 
-module.exports = function Game({ title }) {
+
+module.exports = function Game({ title, index, question }) {
+
   return (
     <div>
       <Layout title={title}>
         <Navbar />
-        <div className="Game">Вопрос:</div>
+
+        <div className="Game">{question.question}</div>
+
         <button className="nextQuest">Следующий вопрос</button>
         <form action="/" method="GET">
           <input name="answer" placeholder="Ваш ответ" />

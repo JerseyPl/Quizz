@@ -1,11 +1,13 @@
 const React = require('react');
 
-// const Product = require('./Product');
 
-module.exports = function Theme({ theme }) {
+module.exports = function Theme({ them }) {
+  console.log(them,'=========');
   return (
-    <div>
-      <h1>{theme.theme}</h1>
-    </div>
+    <a href={`/themes/${them.id}/question/0`}>
+    <button>
+      <h1>{them.theme}</h1>
+    </button>
+    </a>
   );
 };
