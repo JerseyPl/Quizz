@@ -1,7 +1,11 @@
 const ReactDOMServer = require('react-dom/server');
 const React = require('react');
 
-function renderComponent(reactComponent, props = {}, options = { htmlOnly: false }) {
+function renderComponent(
+  reactComponent,
+  props = {},
+  options = { htmlOnly: false },
+) {
   const reactElement = React.createElement(reactComponent, {
     ...this.app.locals, // передать app.locals
     ...this.locals, // передать res.locals

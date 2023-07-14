@@ -10,6 +10,7 @@ module.exports = {
     "sourceType": "module"
   },
   "rules": {
-    "quotes": 0
+    "quotes": 0,
+    "linebreak-style": 0
   }
 }
