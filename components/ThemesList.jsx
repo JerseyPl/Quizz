@@ -14,9 +14,9 @@ module.exports = function ThemesList({title, theme}) {
         <Navbar />
 
         <div className='themes'>
-          {theme.map((theme) => (
+          {theme.map((them) => (
             <button type='button'>
-              <Theme theme={theme} key={theme.id} />
+              <Theme them={them} key={them.id} />
             </button>
           ))}
         </div>
