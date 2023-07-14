@@ -10,11 +10,6 @@ module.exports = function Game({title, index, question}) {
 
         <div className="pole animate__bounce">
           <div className="Game">{question.question}</div>
-          <div className="qestion">
-            <a href={`/themes/${question.themeId}/question/${index}`}>
-              <button className="nextQuest">Следующий вопрос</button>
-            </a>
-          </div>
           <div className="form1">
             <form
               action={`/answer`}
@@ -26,6 +21,12 @@ module.exports = function Game({title, index, question}) {
               <button className="youAnswer">Ответить</button>
             </form>
           </div>
+          <div className="qestion">
+            <a href={`/themes/${question.themeId}/question/${index}`}>
+              <button className="nextQuest">Следующий вопрос</button>
+            </a>
+          </div>
+          
           <h3 className="answerResult"></h3>
         </div>
       </Layout>

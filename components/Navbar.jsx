@@ -10,6 +10,11 @@ module.exports = function Navbar({}) {
               <i>Темы</i>
             </a>
           </li>
+          <li>
+            <a className="text" href="/">
+              <i>На главную</i>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
