@@ -2,8 +2,6 @@ require('@babel/register');
 const morgan = require('morgan');
 const express = require('express');
 const path = require('path');
-const ReactDOMServer = require('react-dom/server');
-const React = require('react');
 const ssr = require('./middleware/renderComponent');
 const indexRoute = require('./routes/index.route');
 
