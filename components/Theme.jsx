@@ -1,6 +1,7 @@
 const React = require('react');
 
 
+
 module.exports = function Theme({ them }) {
   console.log(them,'=========');
   return (
@@ -9,5 +10,6 @@ module.exports = function Theme({ them }) {
       <h1>{them.theme}</h1>
     </button>
     </a>
+
   );
 };
