@@ -155,13 +155,13 @@ body {
 }
 
 .Game {
-  margin: 100px;
+  margin: 80px;
   font-size: 40px;
 }
 .qestion {
   position: relative;
   margin: 30px;
-  left:10px !important;
+  left: 50px !important;
 }
 
 .nextQuest {
@@ -197,4 +197,20 @@ body {
     #96389663 50%,
     #eae28e 100%
   );
+}
+
+.inputAnswer {
+  font-size: 50px;
+  left: 50px;
+}
+
+.form1 {
+  width: 300px;
+}
+
+.input {
+  font-size: 50px !important;
+  margin: 50px !important;
+  left: 30px !important;
+  width: 300px !important;
 }
