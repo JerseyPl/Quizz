@@ -1,7 +1,7 @@
+const router = require('express').Router();
 const Game = require('../components/Game');
-const router = require('./main.route');
 
-router.get('/themes/game', (req, res) => {
+router.get('/', (req, res) => {
   res.renderComponent(Game, {title: 'Game'});
 });
 

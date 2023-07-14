@@ -6,12 +6,13 @@ const Theme = require('./Theme');
 // const Product = require('./Product');
 
 module.exports = function ThemesList({ title, theme }) {
+  console.log(theme, '---------');
   return (
     <div>
       <Layout title={title}>
         <Navbar />
-        {theme.map((theme) => (
-          <Theme theme={theme} key={theme.id} />
+        {theme.map((them) => (
+          <Theme them={them} key={them.id} />
         ))}
       </Layout>
     </div>
