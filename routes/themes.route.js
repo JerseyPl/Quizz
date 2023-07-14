@@ -18,7 +18,7 @@ router.get("/:themeId/question/:questionIndex", async (req, res) => {
       question: quest[index - 1],
     });
   } else {
-    res.redirect("/themes");
+    res.redirect("/");
   }
 });
 module.exports = router;
