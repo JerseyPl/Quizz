@@ -12,7 +12,7 @@ module.exports = function Game({ title, index, question }) {
 
         <div className="Game">{question.question}</div>
 
-        <button className="nextQuest">Следующий вопрос</button>
+        <a href={`/themes/${question.themeId}/question/${index}`}><button className="nextQuest">Следующий вопрос</button></a>
         <form action="/" method="GET">
           <input name="answer" placeholder="Ваш ответ" />
           <button className="youAnswer">Ответить</button>
