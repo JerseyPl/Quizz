@@ -1,21 +1,60 @@
 body {
   height: 1440px;
   width: 100%;
-  background-color: rgb(134, 131, 131);
+  /* background-color: rgb(134, 131, 131); */
 }
 
 #btn {
   position: relative;
   width: 400px;
   height: 200px;
-  left: 1400px;
-  bottom: 950px;
+  left: 1000px;
+  bottom: 350px;
   font-weight: 600;
-  font-size: 80px;
-  color: black;
-  background-color: aqua;
-  border-radius: 15%;
+  font-size: 200px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 40px;
+  margin: 10px 20px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    45deg,
+    #d76a9405 0%,
+    #7733de63 50%,
+    #bc1111ed 100%
+  );
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  color: white;
+  box-shadow: 0 16px 32px 0 rgba(0, 40, 120, 0.35);
+  transition: 0.5s;
   z-index: 130;
+}
+#btn:hover {
+  animation: stripes 0.75s infinite linear;
+  background: linear-gradient(
+    45deg,
+    rgb(249, 249, 249) 25%,
+    rgba(255, 255, 255, 1) 25%,
+    rgb(212, 51, 126) 25%,
+    rgb(212, 51, 126) 25%,
+    rgb(212, 51, 126) 25%,
+    rgba(255, 255, 255, 1) 75%,
+    rgba(255, 255, 255, 1)
+  );
+  background-size: 10px 10px;
+  color: #ff50e5;
+}
+@keyframes stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 0;
+  }
 }
 .img {
   width: 100%;
@@ -42,3 +81,5 @@ body {
   justify-content: center;
   height: 90vh;
 }
+
+
