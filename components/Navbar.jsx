@@ -1,13 +1,14 @@
-const React = require("react");
+const React = require('react');
 
-module.exports = function Navbar({  }) {
+module.exports = function Navbar({}) {
   return (
     <nav>
-      <div className="nav-wrapper">
- 
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <div className="nav-wrapper cyan accent-1">
+        <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li>
-            <a href="/themes">Темы</a>
+            <a className="text" href="/themes">
+              <i>Темы</i>
+            </a>
           </li>
         </ul>
       </div>
